@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arte de los Pasteles | Repostería Artesanal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="header" id="header">
+  <div class="header-inner">
+    <a href="#inicio" class="logo">
+      <span class="logo-icon">✦</span>
+      <span class="logo-text">Arte de los <em>Pasteles</em></span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="theme-toggle" aria-label="Cambiar modo de color" title="Modo claro / oscuro">🌙</button>
+      <button class="icon-btn" id="cart-toggle" aria-label="Abrir carrito">
+        🛒<span class="cart-count" id="cart-count">0</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="inicio">
+  <div class="hero-content">
+    <p class="eyebrow">Repostería fina desde el corazón de La Paz</p>
+    <h1>Cada pastel es <em>una obra</em>,<br>cada bocado <em>un lienzo</em>.</h1>
+    <p class="hero-text">Pasteles hechos a mano, con ingredientes reales y decoraciones que se ven —y se sienten— como arte. Pide en línea y recíbelo fresco en tu puerta.</p>
+    <div class="hero-actions">
+      <a href="#catalogo" class="btn btn-primary">Ver catálogo</a>
+      <a href="#nosotros" class="btn btn-ghost">Conócenos</a>
+    </div>
+  </div>
+  <div class="hero-image">
+    <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?fm=jpg&q=80&w=1200&auto=format&fit=crop" alt="Pastel rosa decorado a mano">
+    <div class="hero-ribbon">Hecho a mano · Ingredientes frescos · Entrega el mismo día</div>
+  </div>
+</section>
+
+<!-- ===== CATALOGO ===== -->
+<section class="catalogo" id="catalogo">
+  <div class="section-head">
+    <p class="eyebrow">Nuestra colección</p>
+    <h2>El catálogo</h2>
+  </div>
+
+  <div class="search-bar">
+    <span class="search-icon">🔍</span>
+    <input type="text" id="search-input" placeholder="Busca un pastel por nombre... ej. chocolate, boda, fresa">
+  </div>
+
+  <div class="filters" id="filters">
+    <button class="filter-btn active" data-filter="todos">Todos</button>
+    <button class="filter-btn" data-filter="cumpleanos">Cumpleaños</button>
+    <button class="filter-btn" data-filter="boda">Bodas</button>
+    <button class="filter-btn" data-filter="chocolate">Chocolate</button>
+    <button class="filter-btn" data-filter="individual">Individuales</button>
+  </div>
+
+  <div class="grid" id="product-grid"></div>
+  <p class="no-results" id="no-results" hidden>No encontramos pasteles con ese nombre. Prueba con otra palabra 🍰</p>
+</section>
+
+<!-- ===== NOSOTROS ===== -->
+<section class="nosotros" id="nosotros">
+  <div class="nosotros-img">
+    <img src="https://images.unsplash.com/photo-1512223792601-592a9809eed4?fm=jpg&q=80&w=1000&auto=format&fit=crop" alt="Decorando un pastel con chocolate">
+  </div>
+  <div class="nosotros-content">
+    <p class="eyebrow">Nuestra historia</p>
+    <h2>Repostería con alma, desde 2015</h2>
+    <p>En <strong>Arte de los Pasteles</strong> creemos que un pastel no solo se prueba, se admira. Cada pieza sale de nuestra cocina hecha a mano, con mantequilla real, fruta fresca y horas de dedicación en cada detalle de decoración.</p>
+    <div class="stats">
+      <div><strong>10+</strong><span>años horneando</span></div>
+      <div><strong>3,000+</strong><span>pasteles entregados</span></div>
+      <div><strong>100%</strong><span>ingredientes reales</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACTO / FOOTER ===== -->
+<footer class="footer" id="contacto">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="logo-text">Arte de los <em>Pasteles</em></span>
+      <p>Pastelería artesanal · Pedidos en línea · Entregas locales</p>
+    </div>
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <p>📍 santa cruz, Bolivia</p>
+      <p>📞 +591 78594895</p>
+      <p>✉️ pedidos@artedelospasteles.com</p>
+    </div>
+    <div class="footer-col">
+      <h4>Horario</h4>
+      <p>Lun – Sáb: 9:00 – 19:00</p>
+      <p>Domingo: 10:00 – 14:00</p>
+    </div>
+    <div class="footer-col">
+      <h4>Síguenos</h4>
+      <div class="social-links">
+        <a href="https://wa.me/59170000000" target="_blank" rel="noopener" class="social-link" aria-label="WhatsApp">📱 WhatsApp</a>
+        <a href="https://instagram.com/artedelospasteles" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">📷 Instagram</a>
+        <a href="https://facebook.com/artedelospasteles" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">👍 Facebook</a>
+        <a href="https://tiktok.com/@artedelospasteles" target="_blank" rel="noopener" class="social-link" aria-label="TikTok">🎵 TikTok</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 Arte de los Pasteles. Todos los derechos reservados.</div>
+</footer>
+
+<!-- ===== BOTÓN FLOTANTE DE WHATSAPP ===== -->
+<a href="https://wa.me/59170000000?text=Hola%2C%20quiero%20hacer%20un%20pedido%20de%20un%20pastel"
+   target="_blank" rel="noopener" class="whatsapp-float" aria-label="Escríbenos por WhatsApp">
+  💬
+</a>
+
+<!-- ===== CARRITO (panel lateral) ===== -->
+<div class="cart-overlay" id="cart-overlay"></div>
+<aside class="cart-panel" id="cart-panel">
+  <div class="cart-header">
+    <h3>Tu carrito</h3>
+    <button id="cart-close" aria-label="Cerrar carrito">✕</button>
+  </div>
+  <div class="cart-items" id="cart-items">
+    <p class="cart-empty" id="cart-empty">Tu carrito está vacío. Agrega un pastel del catálogo 🍰</p>
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total-row">
+      <span>Total</span>
+      <span id="cart-total">Bs. 0</span>
+    </div>
+    <button class="btn btn-primary btn-block" id="checkout-btn">Continuar al pedido</button>
+  </div>
+</aside>
+
+<!-- ===== MODAL: DATOS DE PEDIDO ===== -->
+<div class="modal-overlay" id="order-overlay">
+  <div class="modal" id="order-modal">
+    <button class="modal-close" data-close-modal="order-overlay">✕</button>
+    <h3>Datos de tu pedido</h3>
+    <form id="order-form">
+      <label>Nombre completo
+        <input type="text" name="nombre" required placeholder="Ej. María Fernández">
+      </label>
+      <label>Teléfono
+        <input type="tel" name="telefono" required placeholder="Ej. 71234567">
+      </label>
+      <label>Dirección de entrega
+        <input type="text" name="direccion" required placeholder="Calle, zona, referencia">
+      </label>
+      <label>Fecha de entrega
+        <input type="date" name="fecha" required>
+      </label>
+      <label>Mensaje para el pastel (opcional)
+        <input type="text" name="mensaje" placeholder="Ej. 'Feliz cumpleaños Ana'">
+      </label>
+      <button type="submit" class="btn btn-primary btn-block">Ir a pagar</button>
+    </form>
+  </div>
+</div>
+
+<!-- ===== MODAL: PAGO ===== -->
+<div class="modal-overlay" id="payment-overlay">
+  <div class="modal" id="payment-modal">
+    <button class="modal-close" data-close-modal="payment-overlay">✕</button>
+    <h3>Forma de pago</h3>
+
+    <div class="pay-methods" id="pay-methods">
+      <button type="button" class="pay-method active" data-method="tarjeta">💳 Tarjeta</button>
+      <button type="button" class="pay-method" data-method="qr">📱 QR / Transferencia</button>
+      <button type="button" class="pay-method" data-method="efectivo">💵 Efectivo al entregar</button>
+    </div>
+
+    <form id="payment-form">
+      <div class="pay-panel" data-panel="tarjeta">
+        <label>Nombre en la tarjeta
+          <input type="text" name="cardName" placeholder="Como aparece en la tarjeta">
+        </label>
+        <label>Número de tarjeta
+          <input type="text" name="cardNumber" placeholder="0000 0000 0000 0000" maxlength="19">
+        </label>
+        <div class="pay-row">
+          <label>Vencimiento
+            <input type="text" name="cardExp" placeholder="MM/AA" maxlength="5">
+          </label>
+          <label>CVV
+            <input type="text" name="cardCvv" placeholder="123" maxlength="4">
+          </label>
+        </div>
+      </div>
+
+      <div class="pay-panel" data-panel="qr" hidden>
+        <div class="qr-box">
+          <img src="QR PASTEL.png" alt="Código QR de pago" class="qr-placeholder-img">
+          <p>Escanea el código con tu app bancaria y sube tu comprobante en el siguiente paso, o simplemente confirma abajo.</p>
+        </div>
+      </div>
+
+      <div class="pay-panel" data-panel="efectivo" hidden>
+        <p class="cash-note">Pagarás en efectivo directamente al repartidor cuando recibas tu pedido. Ten el monto exacto listo: <strong id="cash-total">Bs. 0</strong></p>
+      </div>
+
+      <div class="order-summary" id="order-summary"></div>
+
+      <button type="submit" class="btn btn-primary btn-block">Confirmar y pagar</button>
+    </form>
+  </div>
+</div>
+
+<!-- ===== MODAL: CONFIRMACIÓN ===== -->
+<div class="modal-overlay" id="success-overlay">
+  <div class="modal modal-success">
+    <div class="success-icon">🎂</div>
+    <h3>¡Pedido confirmado!</h3>
+    <p>Gracias, <span id="success-name">cliente</span>. Tu número de pedido es <strong id="success-order-id">#0000</strong>.</p>
+    <p class="success-sub">Te contactaremos al número que registraste para coordinar la entrega el día seleccionado.</p>
+    <button class="btn btn-primary" id="success-close">Volver a la tienda</button>
+  </div>
+</div>
+
+<!-- ===== TOAST ===== -->
+<div class="toast" id="toast"></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
